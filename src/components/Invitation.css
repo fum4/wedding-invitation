@@ -1,0 +1,143 @@
+.home {
+    position: relative;
+}
+
+.invitation {
+    position: relative;
+    width: 306px;
+    z-index: 50;
+    backdrop-filter: drop-shadow(0 0 20rem blue);
+    overflow: visible;
+}
+
+.character {
+    position: absolute;
+    top: 35px;
+    right: 13px;
+    width: 135px;
+    pointer-events: none;
+    z-index: 100;
+}
+
+.character-slide {
+    animation: character-slide 3s forwards;
+}
+
+@keyframes character-slide {
+    0% {
+        top: 35px;
+    }
+    7% {
+        top: 15px;
+    }
+    84% {
+        transform: rotate(0);
+    }
+    85% {
+        top: 377px;
+        transform: rotate(-1deg);
+    }
+    92% {
+        top: 373px;
+        transform: rotate(1deg);
+    }
+    to {
+        top: 373px;
+        transform: rotate(0);
+    }
+}
+
+.paper {
+    position: absolute;
+    width: 300px;
+    left: 3px;
+    top: 150px;
+    z-index: 10;
+}
+
+.paper-slide {
+    animation: paper-slide 3s forwards;
+}
+
+@keyframes paper-slide {
+    0% {
+        top: 150px;
+    }
+    7% {
+        top: 130px;
+    }
+    85% {
+        top: 496px;
+    }
+    to {
+        top: 492px;
+    }
+}
+
+.small-heart {
+    position: absolute;
+    z-index: 75;
+}
+
+.heart-1 {
+    width: 16px;
+    top: 356px;
+    right: 47px;
+}
+
+.heart-2 {
+    width: 11.5px;
+    top: 324px;
+    right: 48.5px;
+}
+
+.heart-3 {
+    width: 11.5px;
+    top: 342px;
+    right: 69.5px;
+}
+
+.heart-1.pulse {
+    animation: heart-1-pulse 3s 2.3s forwards;
+}
+
+.heart-2.pulse {
+    animation: heart-2-pulse 3s 2.3s forwards;
+}
+
+.heart-3.pulse {
+    animation: heart-3-pulse 3s 2.3s forwards;
+}
+
+@keyframes heart-1-pulse {
+    from {
+        top: 356px;
+        opacity: 1;
+    }
+    to {
+        top: 337px;
+        opacity: 0;
+    }
+}
+
+@keyframes heart-2-pulse {
+    from {
+        top: 324px;
+        opacity: 1;
+    }
+    to {
+        top: 294.5px;
+        opacity: 0;
+    }
+}
+
+@keyframes heart-3-pulse {
+    from {
+        top: 342px;
+        opacity: 1;
+    }
+    to {
+        top: 317.5px;
+        opacity: 0;
+    }
+}
