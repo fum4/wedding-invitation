@@ -1,5 +1,5 @@
 body {
-    background: black;
+    background: white;
     margin: 0;
 }
 
@@ -22,10 +22,19 @@ body {
     animation: fade-in 2s 1s forwards;
 }
 
-.static-date, .date {
+.static-date {
     position: absolute;
     margin-top: 250px;
-    width: 250px;
+    background: #F2F2F2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 30px;
+    box-shadow: none;
+}
+
+.static-date img {
+    max-width: 250px;
     height: 22px;
 }
 
@@ -38,3 +47,9 @@ body {
     }
 }
 
+@media (min-width: 800px) {
+    .static-date {
+        width: max-content;
+        box-shadow: 0 0 20px 20px #F2F2F2;
+    }
+}

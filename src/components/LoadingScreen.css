@@ -1,9 +1,10 @@
 .loading-screen {
+    background-image: url('/public/assets/background.webp');
+    background-color: white;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
-    background: black;
     width: 100%;
     height: 100%;
     display: flex;
@@ -41,11 +42,25 @@
 }
 
 .fade-out {
-    animation: fade-out 2s forwards;
+    animation: fade-out 1.5s forwards;
 }
 
 .fade-out .date {
-    animation: fade-out 1.5s forwards;
+    animation: fade-out 1s forwards;
+}
+
+.date {
+    background: #F2F2F2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 30px;
+    margin-top: 250px;
+    box-shadow: none;
+}
+
+.date img {
+    max-width: 250px;
 }
 
 @keyframes fade-out {
@@ -54,5 +69,12 @@
     }
     to {
         opacity: 0;
+    }
+}
+
+@media (min-width: 800px) {
+    .date {
+        width: max-content;
+        box-shadow: 0 0 20px 20px #F2F2F2;
     }
 }

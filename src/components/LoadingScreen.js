@@ -24,10 +24,9 @@ const LoadingScreen = ({ open }) => {
         src={staticImageUrl('favicon.webp')}
         className='big-heart pulse'
       />
-      <img
-        className='date'
-        src={staticImageUrl('date.webp')}
-      />
+      <div className='date'>
+        <img src={staticImageUrl('date.webp')} />
+      </div>
     </div>
   )
 }

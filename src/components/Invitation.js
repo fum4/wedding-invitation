@@ -29,6 +29,8 @@ const Invitation = ({ animate, onAssetsLoaded }) => {
       setTimeout(() => {
         startAnimation();
       }, 700);
+
+      window.scrollTo(0, 0);
     }
   }, [ animate ])
 
@@ -65,7 +67,6 @@ const Invitation = ({ animate, onAssetsLoaded }) => {
         ref={heart3Ref}
       />
     </div>
-
   )
 }
 
