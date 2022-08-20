@@ -6,6 +6,10 @@ const LoadingScreen = ({ open }) => {
   const ref = useRef();
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  })
+
+  useEffect(() => {
     if (!open) {
       ref.current.classList.add('fade-out');
     }

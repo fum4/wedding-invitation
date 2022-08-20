@@ -29,8 +29,6 @@ const Invitation = ({ animate, onAssetsLoaded }) => {
       setTimeout(() => {
         startAnimation();
       }, 700);
-
-      window.scrollTo(0, 0);
     }
   }, [ animate ])
 
