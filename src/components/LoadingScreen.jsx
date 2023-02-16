@@ -21,15 +21,20 @@ const LoadingScreen = ({ open }) => {
       className='loading-screen'
     >
       <img
+        alt='heart'
         src={staticImageUrl('favicon.webp')}
         className='big-heart'
       />
       <img
+        alt='heart'
         src={staticImageUrl('favicon.webp')}
         className='big-heart pulse'
       />
       <div className='date'>
-        <img src={staticImageUrl('date.webp')} />
+        <img
+          alt='wedding-date'
+          src={staticImageUrl('date.webp')}
+        />
       </div>
     </div>
   )

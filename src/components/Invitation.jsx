@@ -35,31 +35,37 @@ const Invitation = ({ animate, onAssetsLoaded }) => {
   return (
     <div className='home'>
       <img
+        alt='invitation'
         className='invitation'
         src={staticImageUrl('invitation.webp')}
         onLoad={onAssetsLoaded}
       />
       <img
+        alt='character'
         className='character'
         src={staticImageUrl('character.webp')}
         ref={characterRef}
       />
       <img
+        alt='paper'
         className='paper'
         src={staticImageUrl('paper.webp')}
         ref={paperRef}
       />
       <img
+        alt='heart'
         className='small-heart heart-1'
         src={staticImageUrl('heart_1.webp')}
         ref={heart1Ref}
       />
       <img
+        alt='heart'
         className='small-heart heart-2'
         src={staticImageUrl('heart_2.webp')}
         ref={heart2Ref}
       />
       <img
+        alt='heart'
         className='small-heart heart-3'
         src={staticImageUrl('heart_3.webp')}
         ref={heart3Ref}
